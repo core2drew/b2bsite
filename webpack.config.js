@@ -31,5 +31,15 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '/css/styles.css'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
+  resolve: {
+    alias: {
+      Variables: path.resolve(__dirname, 'src/sass/variables.scss')
+    }
+  }
 };

@@ -1,0 +1,31 @@
+@import "Variables";
+
+.button {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
+  &.-primary {
+    background-color: $yellow-1;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 20px
+  }
+  &.-secondary {
+    background-color: $orange-1;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 20px
+  }
+  &.-tertiary {
+    color: $skyblue-1;
+    background-color: transparent;
+  }
+
+  &.-borderonly {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 20px
+  }
+}

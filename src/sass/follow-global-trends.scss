@@ -1,0 +1,41 @@
+@import "Variables";
+
+#FollowGlobalTrends {
+  background-image: url('/images/follow-the-global-trands-1.jpg');
+  background-size: cover;
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > .column-1 {
+      max-width: 525px;
+      width: 100%;
+      > .title,
+      > .description {
+        color: #fff;
+      }
+      > .title {
+        font-size: 42px;
+        font-weight: bold;
+      }
+      > .description {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+    > .column-2 {
+      display: flex;
+      align-items: center;
+      max-width: 620px;
+      width: 100%;
+      > .try {
+        margin-right: 20px;
+      }
+      > .request,
+      > .try {
+        max-width: 620px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "Variables";
+
+#StartTrial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  > .message {
+    max-width: 800px;
+    width: 100%;
+    > .title {
+      font-size: 40px;
+      font-weight: 700;
+      color: $blue-1;
+    }
+    > .message {
+      font-size: 26px;
+    }
+  }
+  >.starttrial {
+    max-width: 250px;
+    width: 100%;
+  }
+}

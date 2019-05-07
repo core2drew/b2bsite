@@ -4,24 +4,195 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>B2BSignals – Marketing and sales intelligence</title>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar container">
+    <div class="company-logo">
+      <img class="light" src="./images/B2B-logo-light.png" />
+      <img class="colored" src="./images/B2B-logo.png" />
+    </div>
     <div class="links">
       <a href="#" class="link">Why B2BSignals</a>
       <a href="#" class="link">Products</a>
       <a href="#" class="link">Company</a>
       <a href="#" class="link">Resources</a>
-      <a href="#" class="link">Explore the data</a>
-      <a href="#" class="link">Request Demo</a>
       <a href="#" class="link">Login</a>
     </div>
+    <button class="contact button -primary">Contact Sales</button>
   </nav>
-  <div class="hero">
-
+  <div id="HeroBanner"></div>
+  <div id="StartTrial" class="container">
+    <div class="message">
+      <h1 class="title">Skip the guess work and start selling</h1>
+      <p class="message">Target with precision using B2BSignals data on companies, contacts and product install base from within your target markets.</p>
+    </div>
+    <button class="starttrial button -primary">Start You Free Trial</button>
+  </div>
+  <div id="Stats" class="container">
+    <div class="stat">
+      <img class="logo" src="/images/icon-1.jpg" />
+      <div class="milestone">
+        <h3 class="title">ABM (Account-Based Marketing)</h3>
+        <h3 class="count">750K+</h3>
+        <p class="subtitle">Company Locations<span class="asterisk">*</span></p>
+      </div>
+      <div class="content">
+        <p class="description">
+          Determine the number of companies that meet your ideal criteria with. Our Company Profiles include detailed and relevant account information such as products installed, contacts within those accounts, contact information and a visual functional organizational chart, mapping all the contacts within an account into departments and functions. This allows you to get as high-level and granular as needed.
+        </p>
+        <p class="additionalstat">9M+ ADDITIONAL COMPANIES WORLDWIDE †</p>
+      </div>
+    </div>
+    <div class="stat">
+      <img class="logo" src="/images/icon-2.jpg" />
+      <div class="milestone">
+        <h3 class="title">PBM (People-Based Marketing)</h3>
+        <h3 class="count">28M+</h3>
+        <p class="subtitle">Most Searched Personas<span class="asterisk">*</span></p>
+      </div>
+      <div class="content">
+        <p class="description">
+          Speak directly to that key decision maker with our robust database of 28 million contacts. Our Contact Profiles include detailed contact information such as title, business email, phone number, contact department, contact role, seniority and products used. We can not only tell you which technologies are installed at companies, but also the people who are using that product within the company.
+        </p>
+        <p class="additionalstat">300M+ ADDITIONAL CONTACTS †</p>
+      </div>
+    </div>
+    <div class="stat">
+      <img class="logo" src="/images/icon-3.jpg" />
+      <div class="milestone">
+        <h3 class="title">TBM (Tech-Stack Based Marketing)</h3>
+        <h3 class="count">9M+</h3>
+        <p class="subtitle">Installed Technologies<span class="asterisk">*</span></p>
+      </div>
+      <div class="content">
+        <p class="description">
+          We track 43K+ products installed across multiple industries. With one of the most intuitive product categorization and kick-ass search, you can quickly get valuable insights on key accounts and prospects. Market with precision at scale and sell with much higher chances of closing the deal. You can view an organization’s hardware and software stack, tracked to location level.
+        </p>
+        <p class="additionalstat">110M+ ADDITIONAL INSTALLED TECHNOLOGIES †</p>
+      </div>
+    </div>
+    <p class="note">
+      *Data available on SaaS platform, and growing exponentially!
+      † Additional data available for custom projects
+    </p>
+  </div>
+  <div id="DataVisualization">
+    <div class="container">
+      <div class="column-1">
+        <h1 class="title">
+          Powerful Search <br/>
+          + Data Visualization
+        </h1>
+        <h3 class="subtitle">Customers are in love with our Search!</h3>
+        <p class="description"><strong>Combine Company Firmographics</strong> with Contact Seniority, Title, Role and Functional Department.</p>
+        <p class="description"><strong>Supercharge it with technology install base</strong> – search by intuitive product categories or just by product name</p>
+        <p class="description"><strong>Find your ideal prospect!</strong></p>
+        <div class="hostanalytics">
+          <img class="logo" src="/images/hostanalytics.png" />
+          <p class="description">
+            <em>“B2BSignals is a powerful platform for uncovering sales and marketing intelligence, specifically, product installed base. We found that 92% of the contact records were deemed as ‘in market’, compared to just 40% of our usual organic leads.”</em>
+          </p>
+          <p class="author">Nick Ezzo, VP of Demand Generation</p>
+        </div>
+      </div>
+      <div class="column-2">
+        <div class="datachart">
+            <img class="chart" src="/images/FuncOrg-title.png" />
+            <button class="start button -secondary">Start Your Free Trial</button>
+        </div>
+        <p class="description">Use our functional org chart to seamlessly navigate through an organization and identify the key decision makers and buyers</p>
+      </div>
+    </div>
+  </div>
+  <div id="StreamlineWorkflow">
+    <div class="container">
+      <div class="header">
+        <div class="content">
+          <h1 class="title">Streamline your workflow</h1>
+          <p class="subtitle">Unify your tools and systems with B2BSignals platform</p>
+        </div>
+        <button class="button -primary">Start Your Free Trial</button>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <img class="logo" src="/images/salesforce.jpg" />
+          <h2 class="title">Salesforce Integration</h2>
+          <p class="description">Enrich your data and find new prospects, from within your Salesforce interface.</p>
+          <div class="list">
+            <p class="item">Cleanse & Enrich accounts, contacts and leads</p>
+            <p class="item">Find new prospects using install base filters</p>
+            <p class="item">Schedule jobs to enrich data</p>
+            <p class="item">Customize field mapping and update settings</p>
+          </div>
+          <button class="button -tertiary">Learn More</button>
+        </div>
+        <div class="feature">
+          <img class="logo" src="/images/public-apis.jpg" />
+          <h2 class="title">Public APIs</h2>
+          <p class="description">System to system integration with B2BSignals, pull the data directly into your home grown applications.</p>
+          <div class="list">
+              <p class="item">Search for companies and contacts</p>
+              <p class="item">Search by product install base</p>
+              <p class="item">Pull company and contact profiles</p>
+              <p class="item">Enrich data in bulk, upload/download files</p>
+          </div>
+          <button class="button -tertiary">Learn More</button>
+        </div>
+        <div class="feature">
+          <img class="logo" src="/images/bulk-data.jpg" />
+          <h2 class="title">Bulk Data Processing</h2>
+          <p class="description">Use our intuitive interface to upload and download data in bulk, with suppression capability.</p>
+          <div class="list">
+              <p class="item">Upload files to enrich or suppress data</p>
+              <p class="item">Get Contact Data for Companies</p>
+              <p class="item">Upload company and contact suppression data</p>
+              <p class="item">Get notified when your file is ready for download</p>
+          </div>
+          <button class="button -tertiary">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="MarketInsights">
+    <div class="container">
+      <div class="column-1">
+        <h1 class="title">Market Insights</h1>
+        <div class="insight">
+          <h2 class="title">You vs. Them</h2>
+          <p class="description">
+            Learn what the playing field looks like so that you can go after the right market. How do you stack up in different verticals? Where do your most ample opportunities lie?
+          </p>
+        </div>
+        <div class="insight">
+          <h2 class="title">Plan Today for
+              Tomorrow’s Growth</h2>
+          <p class="description">
+            Learn about where you stand now to better plan for your future. Your market share, your success rate, even how fast you’re growing, all point to what your future competitive landscape will look like. Beef up your strategy with help from Market Insights
+          </p>
+        </div>
+      </div>
+      <div class="column-2">
+        <img class="chart" src="/images/market-insights.png" />
+        <p class="description">Self-serve analytics and business intelligence tools for Enterprises</p>
+      </div>
+    </div>
+  </div>
+  <div id="FollowGlobalTrends">
+    <div class="container">
+      <div class="column-1">
+        <h1 class="title">Follow the Global Trends</h1>
+        <p class="description">
+          Discover how Market Insights can show you an inside look at the market trends of competing companies and products in your or any market–based on geographical regions, industry verticals, by company size or department.
+        </p>
+      </div>
+      <div class="column-2">
+        <button class="try button -primary">Try Market Insights</button>
+        <button class="request button -borderonly">Request a demo</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
