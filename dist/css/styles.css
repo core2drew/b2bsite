@@ -801,6 +801,8 @@ template {
     width: 100%;
     color: #0b5588;
     font-weight: bold; }
+  #StatsSection > .container > .row {
+    margin-bottom: 40px; }
 
 #StatsSection > .container > .row > .column {
   -webkit-box-flex: 0;
