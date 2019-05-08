@@ -587,67 +587,29 @@ template {
   color: #7b97ab; }
 
 .navbar {
+  position: absolute;
   top: 25px;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  z-index: 20;
-  -webkit-box-pack: justify;
-          justify-content: space-between; }
-  .navbar > .company-logo > .colored {
+  z-index: 20; }
+  .navbar > .container > .company-logo > .colored {
     position: absolute;
     top: 0;
     opacity: 0;
     visibility: hidden; }
-  .navbar > .links {
+  .navbar > .container > .links {
     display: -webkit-box;
     display: flex;
     justify-content: space-around;
     max-width: 840px;
     width: 100%;
     margin: auto; }
-    .navbar > .links > .link {
+    .navbar > .container > .links > .link {
       color: #fff;
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 600; }
-  .navbar > .contact {
-    max-width: 170px;
-    width: 100%;
-    max-height: 48px; }
-
-.navbar {
-  top: 25px;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  z-index: 20;
-  -webkit-box-pack: justify;
-          justify-content: space-between; }
-  .navbar > .company-logo > .colored {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    visibility: hidden; }
-  .navbar > .links {
-    display: -webkit-box;
-    display: flex;
-    justify-content: space-around;
-    max-width: 840px;
-    width: 100%;
-    margin: auto; }
-    .navbar > .links > .link {
-      color: #fff;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 600; }
-  .navbar > .contact {
+  .navbar > .container > .contact {
     max-width: 170px;
     width: 100%;
     max-height: 48px; }
@@ -855,7 +817,7 @@ template {
     -webkit-box-pack: center;
             justify-content: center;
     background-color: #f8f8f8;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     border-radius: 50px;
     color: #0b5588;
@@ -1018,7 +980,8 @@ template {
     width: 100%;
     padding: 20px 30px 20px 70px;
     font-size: 1.5625rem;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    margin-right: 40px; }
     #ScheduleDemo > .message > .text {
       max-width: 500px;
       width: 100%;
@@ -1087,6 +1050,55 @@ template {
       max-width: 100px;
       width: 100%; }
 
+#FooterSection {
+  padding: 30px 0;
+  color: #aaa; }
+
+#FooterSection > .container > .row {
+  margin-bottom: 60px; }
+
+#FooterSection > .container > .row > .column > .title {
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+#FooterSection > .container > .row > .column:nth-last-child(n + 2) {
+  margin-right: 55px; }
+
+#FooterSection > .container > .row > .column.quicklinks {
+  -webkit-box-flex: 0;
+          flex: 0 1 250px; }
+
+#FooterSection > .container > .row > .column.recenttweets {
+  -webkit-box-flex: 0;
+          flex: 0 1 300px;
+  margin-right: 50px; }
+  #FooterSection > .container > .row > .column.recenttweets > .tweet > .text {
+    margin-bottom: 5px; }
+  #FooterSection > .container > .row > .column.recenttweets > .tweet > .days {
+    font-size: 0.75rem;
+    font-weight: 600; }
+
+#FooterSection > .container > .row > .column.contactus {
+  -webkit-box-flex: 0;
+          flex: 0 1 250px;
+  margin-right: 50px; }
+  #FooterSection > .container > .row > .column.contactus > .address {
+    margin-bottom: 25px; }
+  #FooterSection > .container > .row > .column.contactus > .telno {
+    margin-bottom: 0; }
+  #FooterSection > .container > .row > .column.contactus > .email {
+    margin-top: 0; }
+
+#FooterSection > .container > .row > .column.sitemap {
+  -webkit-box-flex: 0;
+          flex: 0 1 250px; }
+
+#FooterSection > .container > .row > .column.quicklinks > .link:nth-last-child(n + 2),
+#FooterSection > .container > .row > .column.sitemap > .link:nth-last-child(n + 2) {
+  margin-bottom: 15px; }
+
 * {
   box-sizing: border-box; }
 
@@ -1096,7 +1108,8 @@ html, body {
   color: #5c6670; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
   a:visited {
     color: inherit; }
 

@@ -1,0 +1,65 @@
+@import "Variables";
+
+#FooterSection {
+  padding: 30px 0;
+  color: #aaa;
+}
+
+#FooterSection > .container > .row {
+  margin-bottom: 60px;
+}
+
+#FooterSection > .container > .row > .column {
+  > .title {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &:nth-last-child(n + 2) {
+    margin-right: 55px;
+  }  
+}
+
+#FooterSection > .container > .row > .column.quicklinks {
+  flex: 0 1 250px;
+}   
+
+#FooterSection > .container > .row > .column.recenttweets {
+  flex: 0 1 300px;
+  margin-right: 50px;
+  > .tweet {
+    > .text {
+      margin-bottom: 5px;
+    }
+    > .days {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}   
+
+#FooterSection > .container > .row > .column.contactus {
+  flex: 0 1 250px;
+  margin-right: 50px;
+  > .address {
+    margin-bottom: 25px;
+  }
+  > .telno {
+    margin-bottom: 0;
+  }
+  > .email {
+    margin-top: 0;
+  }
+}   
+
+#FooterSection > .container > .row > .column.sitemap {
+  flex: 0 1 250px;
+}   
+
+#FooterSection > .container > .row > .column.quicklinks,
+#FooterSection > .container > .row > .column.sitemap {
+  > .link:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+  }
+}

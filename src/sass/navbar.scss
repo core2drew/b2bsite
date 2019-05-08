@@ -1,36 +1,36 @@
 .navbar {
-  // position: fixed;
+  position: absolute;
+  // background-color: #fff;
   top: 25px;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
   z-index: 20;
-  justify-content: space-between;
-  > .company-logo {
-    > .colored {
-      position: absolute;
-      top: 0;
-      opacity: 0;
-      visibility: hidden;
+  > .container {
+    > .company-logo {
+      > .colored {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+      }
     }
-  }
-  > .links {
-    display: flex;
-    justify-content: space-around;
-    max-width: 840px;
-    width: 100%;
-    margin: auto;
-    > .link {
-      color: #fff;
-      font-size: 16px;
-      text-transform: uppercase;
-      font-weight: 600;
+    > .links {
+      display: flex;
+      justify-content: space-around;
+      max-width: 840px;
+      width: 100%;
+      margin: auto;
+      > .link {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
     }
-  }
-  > .contact {
-    max-width: 170px;
-    width: 100%;
-    max-height: 48px;
+    > .contact {
+      max-width: 170px;
+      width: 100%;
+      max-height: 48px;
+    }
   }
 }

@@ -6,7 +6,6 @@
 @import "components/start-trial-section.scss";
 @import "components/section.scss";
 @import "navbar.scss";
-@import "navbar.scss";
 @import "hero-banner.scss";
 @import "stats.scss";
 @import "data-visualization.scss";
@@ -19,6 +18,7 @@
 @import "our-blog.scss";
 @import "schedule-demo.scss";
 @import "our-customers.scss";
+@import "footer.scss";
 
 * {
   box-sizing: border-box;
@@ -32,6 +32,7 @@ html, body {
 
 a {
   text-decoration: none;
+  color: inherit;
   &:visited {
     color: inherit;
   }
