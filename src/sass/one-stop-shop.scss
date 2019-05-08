@@ -1,0 +1,50 @@
+@import "Variables";
+
+#OneStopShop {
+  padding: 70px 0;
+  > .container {
+    > .row {
+      > .operation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $gray-2;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        color: $blue-1;
+        > i[class*=icon] {
+          font-size: 30px;
+        }
+        margin:0 28px;
+      }
+      > .column {
+        flex: 0 1 370px;
+        min-height: 515px;
+        padding: 30px;
+        color: $blue-1;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        border-radius: 16px;
+        overflow: hidden;
+        > .logo {
+          width: 130px;
+        }
+        > .title {
+          font-size: 25px;
+          text-transform: uppercase;
+        }
+      }
+      > .column:nth-last-child(1) {
+        background-color: $blue-8;
+        color:#fff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        > .title {
+          max-width: 250px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

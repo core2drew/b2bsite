@@ -1,0 +1,35 @@
+@import "Variables";
+
+#OneTimeB2B {
+  background-color: $green-1;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#OneTimeB2B > .container > .row > .column {
+  > .title {
+      margin: 0;
+  }
+  > .tagline {
+    font-size: 28px;
+    margin-top: 0;
+  }
+  > .feature {
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  > .feature:nth-last-child(n + 2) {
+    margin-bottom: 10px;
+  }
+  > .feature > i[class*=icon]{
+    margin-right: 10px;
+  }
+  > .request {
+    min-width: 250px;
+  }
+  > .note {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+}

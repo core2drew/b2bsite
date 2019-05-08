@@ -1,0 +1,48 @@
+@import "Variables";
+
+#OurBlog {
+  padding: 70px 0;
+}
+
+#OurBlog > .container > .header > .title {
+  color: $blue-2;
+}
+
+#OurBlog > .container > .row > .column {
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  overflow: hidden;
+  > .featuredimage {
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+  }
+  > .details {
+    padding: 20px;
+    > .title {
+      font-weight: normal;
+    }
+    > .datetag {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > .date {
+        font-size: 12px;
+      }
+      > .tag {
+        background-color: $purple-1;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  &:nth-last-child(n + 2) {
+    margin-right: 60px;
+  }
+}

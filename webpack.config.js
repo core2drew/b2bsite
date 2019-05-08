@@ -39,7 +39,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Variables: path.resolve(__dirname, 'src/sass/variables.scss')
+      Variables: path.resolve(__dirname, 'src/sass/variables.scss'),
+      Helpers: path.resolve(__dirname, 'src/sass/utils/helpers.scss')
     }
   }
 };

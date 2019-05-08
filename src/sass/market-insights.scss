@@ -3,39 +3,49 @@
 #MarketInsights {
   background-image: url('/images/map.jpg');
   background-size: cover;
+  background-position: center;
   padding: 70px 0;
   > .container {
-    display: flex;
-    justify-content: space-between;
-    > .column-1 {
-      flex: 0 1 550px;
-      > .title,
+    > .section.-left {
+      flex: 0 1 520px;
+      > .insight {
+        padding: 25px 0;
+      }
+      > .insight:nth-of-type(2) {
+        border-bottom: 1px solid $blue-6;
+      }
+
+      > .insight:nth-of-type(2) > .title {
+        margin-top: 0;
+      }
+
+      > .insight > .title {
+        font-weight: normal;
+        font-size: 30px;
+        max-width: 250px;
+        width: 100%;
+      }
+
+
+      > .insight > .description {
+        font-size: 17px;
+        line-height: 1.5;
+        max-width: 415px;
+        width: 100%;
+      }
+
       > .insight > .title, 
       > .insight > .description {
         color: $blue-1;
       }
-      > .title {
-        font-size: 42px;
-        font-weight: bold;
-      }
-      > .insight:nth-of-type(1) {
-        border-bottom: 1px solid $blue-6;
-      }
-      > .insight > .description {
-        font-size: 20px;
-        line-height: 1.5;
-        padding-right: 70px;
-      }
     }
-    > .column-2 {
-      > .chart {
+
+    > .section.-right {
+      flex: 0 1 0;
+
+      > .datachart > .chartimage {
         width: 100%;
-        max-width: 600px;
-      }
-      > .description {
-        text-align: center;
-        font-size: 19px;
-        color: $blue-1;
+        min-width: 600px;
       }
     }
   }

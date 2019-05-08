@@ -1,10 +1,19 @@
 @import "Variables";
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: none;
   text-transform: uppercase;
   font-weight: 600;
   padding: 0;
+  &.-center {
+    justify-content: center;
+  }
+  &.-bolder {
+    font-weight: bolder;
+  }
   &.-primary {
     background-color: $yellow-1;
     color: #fff;

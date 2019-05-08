@@ -1,14 +1,25 @@
 @import "~normalize.css/normalize.css";
 @import "Variables";
+@import "Helpers";
+@import "components/container.scss";
 @import "components/button.scss";
+@import "components/start-trial-section.scss";
+@import "components/section.scss";
+@import "navbar.scss";
 @import "navbar.scss";
 @import "hero-banner.scss";
-@import "start-trial.scss";
 @import "stats.scss";
 @import "data-visualization.scss";
 @import "streamline-workflow.scss";
 @import "market-insights.scss";
-@import "follow-global-trends.scss";
+@import "global-trends.scss";
+@import "one-stop-shop.scss";
+@import "one-time-b2b.scss";
+@import "explore-our-data.scss";
+@import "our-blog.scss";
+@import "schedule-demo.scss";
+@import "our-customers.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -26,9 +37,12 @@ a {
   }
 }
 
-.container {
-  max-width: 1400px;
-  width: 100%;
-  margin: auto;
-  padding: 0 30px;
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
 }

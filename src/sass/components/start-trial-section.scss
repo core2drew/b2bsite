@@ -1,0 +1,31 @@
+@import "Variables";
+
+.start-trial-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  > .header {
+    max-width: 800px;
+    width: 100%;
+    > .title {
+      font-size: 35px;
+      font-weight: 700;
+      color: $blue-1;
+      &.-yellow {
+        color: $yellow-1;
+      }
+    }
+    > .text {
+      font-size: 24px;
+      padding-right: 100px;
+      &.-white {
+        color: #fff;
+      }
+    }
+  }
+  > .start {
+    max-width: 250px;
+    width: 100%;
+  }
+}

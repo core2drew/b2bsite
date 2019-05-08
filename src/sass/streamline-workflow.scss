@@ -3,40 +3,42 @@
 #StreamlineWorkflow {
   background-color: $blue-4;
   padding: 70px 0;
-  > .container {
-    > .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      > .content > .title {
-        color: $yellow-1;
-        font-size: 37px;
-      }
-      > .content > .subtitle {
-        color: #fff;
-        font-size: 25px;
-      }
+}
+
+#StreamlineWorkflow > .container > .row {
+  > .column {
+    flex: 0 1 445px;
+    padding-right: 55px;
+    > .logo {
+      width: 130px;
     }
-    > .features {
-      display: flex;
-      flex-wrap: wrap;
-      > .feature {
-        flex: 0 1 445px;
-        padding-right: 55px;
-      }
-      > .feature > .title {
-        color: $yellow-1;
-        font-size: 25px;
-      }
-      > .feature > .description {
+    > .title {
+      color: $yellow-1;
+      text-transform: uppercase;
+    }
+    > .description {
+      color: #fff;
+      max-width: 350px;
+      width: 100%;
+      line-height: 1.5;
+      margin-top: 0;
+    }
+
+    > .title,
+    > .description {
+      font-size: 23px;
+    }
+
+    > .list {
+      margin-bottom: 40px;
+      > .item{
+        display: flex;
+        align-items: center;
         color: #fff;
-        font-size: 25px;
-        line-height: 1.5;
-        margin-top: 0;
       }
-      > .feature > .list > .item{
-        color: #fff;
+      > .item > i[class*=icon] {
+        color: $yellowgreen-1;
+        margin-right: 10px;
       }
     }
   }

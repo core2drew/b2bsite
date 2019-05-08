@@ -1,57 +1,62 @@
 @import "Variables";
 
-#Stats {
+#StatsSection {
+  padding: 50px 0 70px;
+  > .container {
+    > .stats {
+      margin-bottom: 15px;
+    }
+    > .postscript {
+      max-width: 450px;
+      width: 100%;
+      color: $blue-1;
+      font-weight: bold;
+    }
+  }
+}
+
+#StatsSection > .container > .row > .column {
+  flex: 0 1 396px;
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 40px;
-  > .stat {
-    flex: 0 1 396px;
-    display: flex;
-    flex-direction: column;
-    &:nth-last-child(n + 2) {
-      margin-right: 50px;
+  flex-direction: column;
+
+  &:nth-last-child(n + 2) {
+    margin-right: 50px;
+  }
+  > .logo {
+    align-self: flex-start;
+    width: 100px;
+  }
+  > .milestone {
+    > .title {
+      color: $blue-1;
+      font-size: 21px;
     }
-    > .logo {
-      align-self: flex-start;
-      width: 100px;
+    > .count {
+      color: $blue-1;
+      font-size: 50px;
+      margin: 0;
     }
-    > .milestone {
-      > .title {
-        color: $blue-1;
-        font-size: 21px;
-      }
-      > .count {
-        color: $blue-1;
-        font-size: 50px;
-        margin: 0;
-      }
-      > .subtitle {
-        color: $yellow-1;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-top: 5px;
-      }
-      > .subtitle > .asterisk {
-        color: $blue-1;
-      }
+    > .subtitle {
+      color: $yellow-1;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 5px;
     }
-    > .content {
-      > .description {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-      > .additionalstat {
+    > .subtitle {
+      > .asterisk {
         color: $blue-1;
-        font-weight: bold;
       }
     }
   }
-  > .note {
-    max-width: 450px;
-    width: 100%;
+  > .description {
+    font-size: 18px;
     line-height: 1.5;
+  }
+  > .additionalstat {
     color: $blue-1;
     font-weight: bold;
+    margin-top: auto;
   }
 }

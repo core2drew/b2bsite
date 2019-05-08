@@ -1,68 +1,64 @@
 @import "Variables";
 
-#DataVisualization {
+#DataVisualSection {
   background-color: $blue-5;
   padding: 70px 0;
   > .container {
-    display: flex;
-    justify-content: space-between;
-    > .column-1 {
+    > .section.-left {
       flex: 0 1 550px;
-      > .title {
-        color: $blue-1;
-        font-size: 42px;
-        font-weight: bold;
-      }
-      > .subtitle {
-        color: $yellow-1;
-        font-size: 25px;
-      }
-      > .description {
-        color: $blue-1;
-        font-size: 20px;
-        line-height: 1.5;
-      }
-      > .hostanalytics {
-        padding: 45px 0;
-        margin-top: 40px;
-        border-top: 1px solid $blue-6;
-      }
-      > .hostanalytics > .logo {
-        margin-bottom: 20px;
-        width: 160px;
-      }
-      > .hostanalytics > .description {
-        color: $blue-1;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 1.5;
-        margin-bottom: 40px;
-      }
-      > .hostanalytics > .author {
-        color: $blue-1;
-        font-size: 20px;
-      }
     }
 
-    > .column-2 {
+    > .section.-right {
       flex: 0 1 0;
-      > .datachart {
-        position: relative;
-      }
-      > .datachart > .chart {
-        width: 100%;
-        min-width: 600px;
-      }
-      > .datachart > .start {
-        position: absolute;
-        bottom: 110px;
-        right: 195px;
-      }
-      > .description {
-        text-align: center;
-        font-size: 19px;
-        color: $blue-7;
-      }
     }
+  }
+}
+
+#DataVisualSection > .container > .section.-left {
+  > .description {
+    color: $blue-1;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &:nth-last-child(n + 2) {
+      margin-bottom: 25px;
+    }
+  }
+  > .hostanalytics {
+    padding: 45px 0 0;
+    margin-top: 40px;
+    border-top: 1px solid $blue-6;
+    > .logo {
+      margin-bottom: 20px;
+      width: 160px;
+    }
+    > .description {
+      color: $blue-1;
+      font-size: 22px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      max-width: 470px;
+      width: 100%;
+    }
+    > .author {
+      color: $blue-1;
+      font-size: 20px;
+    }
+  }
+}
+
+#DataVisualSection > .container > .section.-right { 
+  > .datachart {
+    > .start {
+      position: absolute;
+      bottom: 110px;
+      right: 155px;
+      min-width: 245px;
+    }
+  }
+  > .description {
+    text-align: center;
+    font-size: 17px;
+    color: $blue-7;
   }
 }

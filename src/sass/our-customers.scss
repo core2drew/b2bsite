@@ -1,0 +1,30 @@
+@import "Variables";
+
+#OurCustomers {
+  background: #024f74; /* Old browsers */
+  background: -moz-linear-gradient(left, #024f74 0%, #3a6d8f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #024f74 0%,#3a6d8f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #024f74 0%,#3a6d8f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#024f74', endColorstr='#3a6d8f',GradientType=1 ); /* IE6-9 */
+  color:#fff;
+  padding: 70px 0;
+  > .container {
+    > .title {
+      margin-top: 0;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    > .customers {
+      width: 100%;
+      > .logo {
+        max-width: 150px;
+        width: 100%;
+      }
+      > .logo.cisco,
+      > .logo.ibm {
+        max-width: 100px;
+        width: 100%;
+      }
+    }
+  }
+}

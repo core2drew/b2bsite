@@ -1,0 +1,37 @@
+@import "Variables";
+
+#GlobalTrends {
+  background-image: url('/images/follow-the-global-trands-1.jpg');
+  background-size: cover;
+  > .container {
+    > .leftside {
+      max-width: 520px;
+      width: 100%;
+      > .title,
+      > .description {
+        color: #fff;
+      }
+      > .title {
+        font-size: 38px;
+        font-weight: bold;
+      }
+      > .description {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+    > .rightside {
+      display: flex;
+      align-items: center;
+      max-width: 600px;
+      width: 100%;
+      > .try {
+        margin-right: 20px;
+      }
+      > .request,
+      > .try {
+        width: 100%;
+      }
+    }
+  }
+}
