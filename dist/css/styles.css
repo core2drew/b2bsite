@@ -726,20 +726,32 @@ template {
             border-radius: 20px;
             height: 8px;
             width: 8px;
-            position: relative; }
+            position: relative;
+            z-index: 3; }
             #HeroBanner > .container > .row > .column-2 > .dots > .dot:nth-last-child(n + 2) {
               margin-bottom: 10px; }
-              #HeroBanner > .container > .row > .column-2 > .dots > .dot:nth-last-child(n + 2):after {
-                position: absolute;
-                display: block;
-                content: '';
-                width: 2px;
-                height: 5px;
-                background-color: #fff; }
             #HeroBanner > .container > .row > .column-2 > .dots > .dot.-active {
               height: 12px;
               width: 12px;
               background-color: #f8961d; }
+            #HeroBanner > .container > .row > .column-2 > .dots > .dot.-active > .line {
+              position: absolute;
+              left: 5px;
+              top: 11px;
+              display: block;
+              content: '';
+              width: 2px;
+              height: 17px;
+              background-color: #fff; }
+            #HeroBanner > .container > .row > .column-2 > .dots > .dot > .line {
+              position: absolute;
+              left: 3px;
+              top: 8px;
+              display: block;
+              content: '';
+              width: 2px;
+              height: 10px;
+              background-color: #fff; }
     #HeroBanner > .container > .tabs {
       display: -webkit-box;
       display: flex;
