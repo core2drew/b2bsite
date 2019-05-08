@@ -655,10 +655,17 @@ template {
     width: 100%;
     margin: auto; }
     .navbar > .container > .links > .link {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
       color: #fff;
       font-size: 1rem;
       text-transform: uppercase;
       font-weight: 600; }
+      .navbar > .container > .links > .link > i[class*=icon] {
+        margin-left: 10px;
+        font-size: 0.8125rem; }
   .navbar > .container > .contact {
     max-width: 170px;
     width: 100%;

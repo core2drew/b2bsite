@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'b2bsite';
-  src:  url('fonts/b2bsite.eot?qkzv47');
-  src:  url('fonts/b2bsite.eot?qkzv47#iefix') format('embedded-opentype'),
-    url('fonts/b2bsite.ttf?qkzv47') format('truetype'),
-    url('fonts/b2bsite.woff?qkzv47') format('woff'),
-    url('fonts/b2bsite.svg?qkzv47#b2bsite') format('svg');
+  src:  url('fonts/b2bsite.eot?nsela0');
+  src:  url('fonts/b2bsite.eot?nsela0#iefix') format('embedded-opentype'),
+    url('fonts/b2bsite.ttf?nsela0') format('truetype'),
+    url('fonts/b2bsite.woff?nsela0') format('woff'),
+    url('fonts/b2bsite.svg?nsela0#b2bsite') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-down:before {
+  content: "\e905";
+}
 .icon-search:before {
   content: "\e904";
 }
