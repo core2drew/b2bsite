@@ -586,6 +586,56 @@ template {
   font-size: 1.0625rem;
   color: #7b97ab; }
 
+.search-box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px; }
+  .search-box.-transparent {
+    background-color: transparent;
+    border-bottom: 1px solid #7b97ab;
+    padding-bottom: 10px; }
+    .search-box.-transparent > i[class*=search] {
+      color: #3a6d8f;
+      margin-right: 20px; }
+    .search-box.-transparent > .input {
+      color: #fff; }
+      .search-box.-transparent > .input::-webkit-input-placeholder {
+        color: #3a6d8f; }
+      .search-box.-transparent > .input::-moz-placeholder {
+        color: #3a6d8f; }
+      .search-box.-transparent > .input:-ms-input-placeholder {
+        color: #3a6d8f; }
+      .search-box.-transparent > .input::-ms-input-placeholder {
+        color: #3a6d8f; }
+      .search-box.-transparent > .input::placeholder {
+        color: #3a6d8f; }
+  .search-box > i[class*=search] {
+    font-size: 1.25rem;
+    margin: 0 10px; }
+  .search-box > .input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.125rem; }
+    .search-box > .input::-webkit-input-placeholder {
+      color: #aaa; }
+    .search-box > .input::-moz-placeholder {
+      color: #aaa; }
+    .search-box > .input:-ms-input-placeholder {
+      color: #aaa; }
+    .search-box > .input::-ms-input-placeholder {
+      color: #aaa; }
+    .search-box > .input::placeholder {
+      color: #aaa; }
+    .search-box > .input:focus {
+      outline: none; }
+
 .navbar {
   position: absolute;
   top: 25px;
@@ -617,7 +667,111 @@ template {
 #HeroBanner {
   height: 100vh;
   background-image: url("/images/hero_banner.jpeg");
-  background-size: cover; }
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center; }
+  #HeroBanner > .container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center; }
+    #HeroBanner > .container > .row {
+      width: 100%;
+      -webkit-box-align: center;
+              align-items: center; }
+      #HeroBanner > .container > .row > .column-1 {
+        align-self: flex-start; }
+        #HeroBanner > .container > .row > .column-1 > .header {
+          align-self: flex-start;
+          color: #fff;
+          max-width: 550px;
+          width: 100%; }
+          #HeroBanner > .container > .row > .column-1 > .header > .tagline {
+            font-size: 3.75rem; }
+          #HeroBanner > .container > .row > .column-1 > .header > .text {
+            font-size: 1.5625rem; }
+        #HeroBanner > .container > .row > .column-1 > .search-box {
+          align-self: flex-start;
+          max-width: 550px;
+          background-color: #fff; }
+          #HeroBanner > .container > .row > .column-1 > .search-box > i[class*=search] {
+            font-size: 1.5625rem; }
+      #HeroBanner > .container > .row > .column-2 {
+        margin-left: auto; }
+        #HeroBanner > .container > .row > .column-2 > .dots {
+          margin-left: auto;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column;
+          -webkit-box-align: center;
+                  align-items: center; }
+          #HeroBanner > .container > .row > .column-2 > .dots > .dot {
+            background-color: #fff;
+            border-radius: 20px;
+            height: 8px;
+            width: 8px;
+            position: relative; }
+            #HeroBanner > .container > .row > .column-2 > .dots > .dot:nth-last-child(n + 2) {
+              margin-bottom: 10px; }
+              #HeroBanner > .container > .row > .column-2 > .dots > .dot:nth-last-child(n + 2):after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 2px;
+                height: 5px;
+                background-color: #fff; }
+            #HeroBanner > .container > .row > .column-2 > .dots > .dot.-active {
+              height: 12px;
+              width: 12px;
+              background-color: #f8961d; }
+    #HeroBanner > .container > .tabs {
+      display: -webkit-box;
+      display: flex;
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 50px; }
+      #HeroBanner > .container > .tabs > .tab {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+                align-items: center;
+        border-top: 1px solid #fff;
+        color: #fff;
+        width: 100%;
+        padding-right: 20px; }
+        #HeroBanner > .container > .tabs > .tab > .number {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+                  justify-content: center;
+          min-width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          border: 1px solid #fff;
+          margin-right: 20px; }
+        #HeroBanner > .container > .tabs > .tab > .text {
+          max-width: 160px;
+          width: 100%;
+          text-transform: uppercase; }
+        #HeroBanner > .container > .tabs > .tab.-active {
+          border-top: 4px solid #f8961d;
+          color: #f8961d; }
+        #HeroBanner > .container > .tabs > .tab.-active > .number {
+          border: 1px solid #f8961d; }
 
 #StatsSection {
   padding: 50px 0 70px; }
@@ -892,38 +1046,6 @@ template {
   #ExploreOurData > .container > .header > .text {
     font-size: 1.4375rem;
     margin-top: 10px; }
-
-#ExploreOurData > .container > .search-box {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: end;
-          align-items: flex-end;
-  border-bottom: 1px solid #7b97ab;
-  max-width: 700px;
-  width: 100%;
-  padding-bottom: 10px; }
-  #ExploreOurData > .container > .search-box > i[class*=search] {
-    font-size: 1.25rem;
-    color: #3a6d8f;
-    margin-right: 20px; }
-  #ExploreOurData > .container > .search-box > .input {
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    font-size: 1.25rem;
-    color: #fff; }
-    #ExploreOurData > .container > .search-box > .input::-webkit-input-placeholder {
-      color: #3a6d8f; }
-    #ExploreOurData > .container > .search-box > .input::-moz-placeholder {
-      color: #3a6d8f; }
-    #ExploreOurData > .container > .search-box > .input:-ms-input-placeholder {
-      color: #3a6d8f; }
-    #ExploreOurData > .container > .search-box > .input::-ms-input-placeholder {
-      color: #3a6d8f; }
-    #ExploreOurData > .container > .search-box > .input::placeholder {
-      color: #3a6d8f; }
-    #ExploreOurData > .container > .search-box > .input:focus {
-      outline: none; }
 
 #OurBlog {
   padding: 70px 0; }

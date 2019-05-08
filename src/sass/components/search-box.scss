@@ -1,0 +1,45 @@
+@import "Variables";
+
+.search-box {
+  display: flex;
+  align-items: flex-end;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  &.-transparent {
+    background-color: transparent;
+    border-bottom: 1px solid $blue-7;
+    padding-bottom: 10px;
+    > i[class*=search] {
+      color: $blue-2;
+      margin-right: 20px;
+    }
+
+    > .input {
+      color: #fff;
+      &::placeholder {
+        color: $blue-2;
+      }
+    }
+  }
+  
+  > i[class*=search] {
+    font-size: 20px;
+    margin:0 10px;
+  }
+  
+  > .input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    &::placeholder {
+      color: #aaa;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}

@@ -1,5 +1,115 @@
 #HeroBanner {
   height: 100vh;
   background-image: url('/images/hero_banner.jpeg');
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: multiply;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .row {
+      width: 100%;
+      align-items: center;
+      > .column-1 {
+        align-self: flex-start;
+        > .header {
+          align-self: flex-start;
+          color: #fff;
+          max-width: 550px;
+          width: 100%;
+          > .tagline {
+            font-size: 60px;
+          }
+          > .text {
+            font-size: 25px;
+          }
+        }
+        > .search-box {
+          align-self: flex-start;
+          max-width: 550px;
+          background-color: #fff;
+    
+          > i[class*=search] {
+            font-size: 25px;
+          }
+        }
+      }
+      > .column-2 {
+        margin-left: auto;
+        > .dots {
+          margin-left: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          > .dot {
+            background-color: #fff;
+            border-radius: 20px;
+            height: 8px;
+            width: 8px;
+            position: relative;
+            &:nth-last-child(n + 2) {
+              margin-bottom: 10px;
+              &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 2px;
+                height: 5px;
+                background-color: #fff;
+              }
+            }
+            &.-active {
+              height: 12px;
+              width: 12px;
+              background-color: $yellow-1;
+            }
+          }
+        }
+      }
+    }
+
+    > .tabs {
+      display: flex;
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 50px;
+      > .tab {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #fff;
+        color: #fff;
+        width: 100%;
+        padding-right: 20px;
+        > .number {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 30px;
+          height: 30px;
+          border-radius: 30px;
+          border: 1px solid #fff;
+          margin-right: 20px;
+        }
+        > .text {
+          max-width: 160px;
+          width: 100%;
+          text-transform: uppercase;
+        }
+        &.-active {
+          border-top: 4px solid $yellow-1;
+          color: $yellow-1;
+        }
+
+        &.-active > .number {
+          border: 1px solid $yellow-1;
+        }
+      }
+    }
+  }
 }
